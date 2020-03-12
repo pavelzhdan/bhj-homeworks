@@ -1,12 +1,8 @@
 let target = document.getElementById('hole1');
 
-
 target.onclick = () => {
     checkscore(target);
 };
-
-let target1 = document.getElementById('hole2');
-
 
 function checkscore(hole){
     let strike = document.getElementById("dead");
@@ -19,7 +15,7 @@ function checkscore(hole){
             alert("Вы Выиграли!");
             strike.textContent = 0;
             miss.textContent = 0;
-        }
+        };
     }else{
         miss.textContent = missScore +1;
         if(miss.textContent == 5){
@@ -30,6 +26,7 @@ function checkscore(hole){
     };
 };
 
+let target1 = document.getElementById('hole2');
 
 target1.onclick = () => {
     checkscore(target1);
