@@ -1,7 +1,10 @@
-let target = document.getElementById('hole1');
+let target0 = document.getElementsByClassName("hole");
 
-target.onclick = () => {
-    checkscore(target);
+for(let i = 0; i < target0.length; i++){
+    target0[i].onclick = () => {
+        let target = target0[i];
+        checkscore(target);
+    };
 };
 
 function checkscore(hole){
@@ -24,53 +27,4 @@ function checkscore(hole){
             miss.textContent = 0; 
         };
     };
-};
-
-let target1 = document.getElementById('hole2');
-
-target1.onclick = () => {
-    checkscore(target1);
-};
-
-let target2 = document.getElementById('hole3');
-
-target2.onclick = () => {
-    checkscore(target2);
-};
-
-let target3 = document.getElementById('hole4');
-
-target3.onclick = () => {
-    checkscore(target3);
-};
-
-let target4 = document.getElementById('hole5');
-
-target4.onclick = () => {
-    checkscore(target4);
-};
-
-
-let target5 = document.getElementById('hole6');
-
-target5.onclick = () => {
-    checkscore(target5);
-};
-
-let target6 = document.getElementById('hole7');
-
-target6.onclick = () => {
-    checkscore(target6);
-};
-
-let target7 = document.getElementById('hole8');
-
-target7.onclick = () => {
-    checkscore(target7);
-};
-
-let target8 = document.getElementById('hole9');
-
-target8.onclick = () => {
-    checkscore(target8);
 };
